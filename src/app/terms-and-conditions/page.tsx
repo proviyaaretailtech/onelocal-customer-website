@@ -38,6 +38,11 @@ export default function TermsPage() {
       </section>
 
       <section>
+        <h2>One Saver</h2>
+        <p>One Saver is the savings view of your cart. It is free: there is no membership fee, sign-up or renewal. It shows the coupons you can use and how close you are to free delivery. One coupon can be used per order; each coupon shows its own minimum order and end date, and a coupon that no longer applies is removed from the cart before you pay. Free delivery applies when your basket reaches the amount shown in the cart.</p>
+      </section>
+
+      <section>
         <h2>Cancellations and refunds</h2>
         <p>You can cancel an order in the app until the store accepts it. If an item is missing, wrong or damaged, report it in the app on the day of delivery and we will help you get a replacement or a refund. Refunds go back to the way you paid.</p>
       </section>
@@ -54,7 +59,7 @@ export default function TermsPage() {
 
       <section>
         <h2>Your data</h2>
-        <p>How we use your personal data is explained in our <Link href="/privacy" className="font-semibold text-primary underline underline-offset-2">privacy policy</Link>.</p>
+        <p>How we use your personal data is explained in our <Link href="/privacy-policy" className="font-semibold text-primary underline underline-offset-2">privacy policy</Link>.</p>
       </section>
 
       <section>

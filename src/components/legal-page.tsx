@@ -14,8 +14,8 @@ export function LegalPage({ title, intro, children }: { title: string; intro: st
         <div className="mt-10 space-y-10 text-[15px] leading-relaxed text-foreground/90 [&_h2]:mb-3 [&_h2]:text-xl [&_h2]:font-bold [&_h2]:text-foreground [&_li]:ml-5 [&_li]:list-disc [&_ul]:space-y-1.5">{children}</div>
         <div className="mt-16 flex flex-wrap gap-4 text-sm font-semibold">
           <Link href="/" className="text-primary">← Home</Link>
-          <Link href="/privacy" className="text-muted-foreground hover:text-foreground">Privacy policy</Link>
-          <Link href="/terms" className="text-muted-foreground hover:text-foreground">Terms of service</Link>
+          <Link href="/privacy-policy" className="text-muted-foreground hover:text-foreground">Privacy policy</Link>
+          <Link href="/terms-and-conditions" className="text-muted-foreground hover:text-foreground">Terms of service</Link>
         </div>
       </main>
     </div>

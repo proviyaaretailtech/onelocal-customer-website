@@ -214,7 +214,7 @@ export default function Home() {
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-5 text-sm text-muted-foreground">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/brand/onelocal-logo-on-dark.png" alt="OneLocal" className="h-6 w-auto" />
-          <span>© 2026 OneLocal · Made in Latur · <a href={PARTNER_SITE} className="underline underline-offset-2 hover:text-foreground">For partners</a> · <a href="/privacy" className="underline underline-offset-2 hover:text-foreground">Privacy</a> · <a href="/terms" className="underline underline-offset-2 hover:text-foreground">Terms</a> · <a href={process.env.NEXT_PUBLIC_SOURCE_URL ?? "/source"} className="underline underline-offset-2 hover:text-foreground">Source code (AGPL-3.0)</a></span>
+          <span>© 2026 OneLocal · Made in Latur · <a href={PARTNER_SITE} className="underline underline-offset-2 hover:text-foreground">For partners</a> · <a href="/privacy-policy" className="underline underline-offset-2 hover:text-foreground">Privacy</a> · <a href="/terms-and-conditions" className="underline underline-offset-2 hover:text-foreground">Terms</a> · <a href={process.env.NEXT_PUBLIC_SOURCE_URL ?? "/source"} className="underline underline-offset-2 hover:text-foreground">Source code (AGPL-3.0)</a></span>
         </div>
       </footer>
     </div>

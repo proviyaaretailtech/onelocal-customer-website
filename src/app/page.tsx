@@ -2,10 +2,10 @@ import { Download, MapPin, ShieldCheck, Smartphone, Wallet } from "lucide-react"
 import { Marquee } from "@/components/marquee";
 import { Accordion } from "@/components/accordion";
 import { SiteHeader } from "@/components/site-header";
+import { SiteFooter } from "@/components/site-footer";
 import { LoopVideo, Phone } from "@/components/media";
 import { PARTNERS } from "@/lib/partners";
 import { DotGrid } from "@/components/dot-grid";
-import { WordRotator } from "@/components/word-rotator";
 import { TiltCard } from "@/components/tilt-card";
 import { WordReveal } from "@/components/word-reveal";
 import { StickyStack } from "@/components/sticky-stack";
@@ -52,12 +52,12 @@ export default function Home() {
           <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 pt-12 pb-20 lg:grid-cols-[1.05fr_1fr] lg:pt-20 lg:pb-28">
             <div className="relative z-10">
               <p className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-semibold tracking-[0.18em] text-muted-foreground uppercase">
-                <span className="size-1.5 animate-pulse rounded-full bg-primary" />Now delivering in Latur
+                <span className="size-1.5 animate-pulse rounded-full bg-primary" />Your town. Your people. Your oneLocal.
               </p>
               <h1 className="mt-6 text-[clamp(2.8rem,6.8vw,5.6rem)] leading-[0.92] font-extrabold tracking-[-0.05em]">
-                <WordRotator words={["Biryani,", "Groceries,", "Medicines,", "Sweets,", "Everything,"]} interval={2200} /><br /><span className="neon">from Latur’s</span><br />own shops.
+                Your local world,<br /><span className="neon">all in one</span><br />place.
               </h1>
-              <p className="mt-6 max-w-md text-lg text-muted-foreground">Food, groceries, medicines and the stores you already love, delivered to your door. One app for all of Latur.</p>
+              <p className="mt-6 max-w-md text-lg text-muted-foreground">From your favourite food and everyday essentials to neighbourhood shops and trusted local services, discover more of Latur with oneLocal.</p>
               <div className="mt-8 flex flex-wrap items-center gap-4">
                 <MagneticCta href={DOWNLOAD_PATH}>Download for Android ↓</MagneticCta>
                 <a href="#install" className="rounded-full border border-white/15 px-6 py-4 text-base font-semibold transition-colors hover:bg-white/5">How to install</a>
@@ -102,7 +102,7 @@ export default function Home() {
 
         <section className="mx-auto grid max-w-6xl items-center gap-10 px-5 pt-24 lg:grid-cols-[1.1fr_1fr]">
           <WordReveal className="text-[clamp(1.8rem,3.4vw,2.9rem)] leading-[1.15] font-extrabold tracking-[-0.03em]"
-            text="What to eat tonight, what the house needs this week, the medicine that cannot wait. OneLocal brings it from the shops down your road, not a warehouse far away." />
+            text="Shop local. Eat local. Support local. oneLocal brings Latur closer to the places, products and people that make it special, one tap away." />
           <div className="grid h-[380px] grid-cols-2 grid-rows-2 gap-3 sm:h-[420px]">
             {[
               { src: "/photo/collage-eat.webp", caption: "What to eat", span: "row-span-2" },
@@ -186,7 +186,7 @@ export default function Home() {
           <div className="mx-auto max-w-6xl px-5 py-24">
             <div className="grid items-center gap-10 lg:grid-cols-[1fr_auto]">
               <div>
-                <h2 className="max-w-3xl text-4xl font-extrabold tracking-[-0.03em] sm:text-6xl">Latur is ordering. <span className="neon">Join in.</span></h2>
+                <h2 className="max-w-3xl text-4xl font-extrabold tracking-[-0.03em] sm:text-6xl">oneLocal. <span className="neon">Your local world, all in one place.</span></h2>
                 <div className="mt-8 flex flex-wrap items-center gap-4">
                   <DownloadButton />
                   <a href={PARTNER_SITE} className="inline-flex items-center gap-2 rounded-full border border-white/15 px-6 py-4 text-base font-semibold transition-colors hover:bg-white/5">Own a shop? Sell on OneLocal →</a>
@@ -210,13 +210,7 @@ export default function Home() {
           <Accordion items={FAQ} />
         </section>
       </main>
-      <footer className="border-t border-white/5 py-10">
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-5 text-sm text-muted-foreground">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/brand/onelocal-logo-on-dark.png" alt="OneLocal" className="h-6 w-auto" />
-          <span>© 2026 OneLocal · Made in Latur · <a href={PARTNER_SITE} className="underline underline-offset-2 hover:text-foreground">For partners</a> · <a href="/privacy-policy" className="underline underline-offset-2 hover:text-foreground">Privacy</a> · <a href="/terms-and-conditions" className="underline underline-offset-2 hover:text-foreground">Terms</a> · <a href={process.env.NEXT_PUBLIC_SOURCE_URL ?? "/source"} className="underline underline-offset-2 hover:text-foreground">Source code (AGPL-3.0)</a></span>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

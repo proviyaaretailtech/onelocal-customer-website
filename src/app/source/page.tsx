@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
+import { SiteFooter } from "@/components/site-footer";
 
 // AGPL-3.0: everyone who uses this website over the network may get its complete source code.
 // The mascot comes from Bible Strong Avatar Lab (AGPL-3.0, github.com/smontlouis/bible-strong-avatar-lab).
@@ -15,6 +16,7 @@ export default function SourcePage() {
         <p className="mt-8 text-sm text-muted-foreground">Our mascot is built with <a className="underline" href="https://github.com/smontlouis/bible-strong-avatar-lab">Bible Strong Avatar Lab</a> by Stéphane Montlouis-Calixte (AGPL-3.0).</p>
         <Link href="/" className="mt-10 inline-block text-sm font-semibold text-primary">← Home</Link>
       </main>
+      <SiteFooter />
     </div>
   );
 }

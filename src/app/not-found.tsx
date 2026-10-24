@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
+import { SiteFooter } from "@/components/site-footer";
 
 export default function NotFound() {
   return (
@@ -14,6 +15,7 @@ export default function NotFound() {
           <a href="/download" className="rounded-full border border-white/15 px-6 py-3 font-semibold">Download the app</a>
         </div>
       </main>
+      <SiteFooter />
     </div>
   );
 }

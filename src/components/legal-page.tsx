@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
+import { SiteFooter } from "@/components/site-footer";
 import { LEGAL, isTbc } from "@/lib/legal";
 
 // Shared frame for the privacy policy and the terms: plain reading layout in the site's dark style.
@@ -18,6 +19,7 @@ export function LegalPage({ title, intro, children }: { title: string; intro: st
           <Link href="/terms-and-conditions" className="text-muted-foreground hover:text-foreground">Terms of service</Link>
         </div>
       </main>
+      <SiteFooter />
     </div>
   );
 }

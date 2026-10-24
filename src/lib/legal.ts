@@ -12,6 +12,8 @@ export const LEGAL = {
   legalEntity: "Proviyaa Global (OPC) Private Limited (CIN U70200ME2026OPC474234)",
   registeredAddress: "C/o Yerte Manisha Baswaraj, Bunglow No. 37, New Adarsh Colony, Ausa Road, Latur 413512, Maharashtra, India",
   grievanceOfficer: { name: "Vaishnavi Baswaraj Yerte", email: "proviyaaretailtech@gmail.com", phone: "+91 86683 20699", hours: "Monday to Saturday, 10 am to 6 pm" },
+  // Business phone shown in the site footer. Empty hides it until the founder supplies the number.
+  businessPhone: "",
   supportEmail: "proviyaaretailtech@gmail.com",
   responseDays: 90,
   minimumAge: 18,
